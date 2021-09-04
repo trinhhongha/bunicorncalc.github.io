@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunicorn Power calc (@harrytrinh)</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body class="m-3">
+    <div class='justify-content-center mb-3'>
+        <img src="https://bunicorn.game/img/logo.c1adf52a.png">
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                  Trainer
+                   <img id='imgTrainerElement' class="ml-2"> 
+              </h5>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="mb-3">
+                    <label for="txtTrainerElement">Element</label>
+                    <select id='txtTrainerElement' class="form-select">
+                      <option value="">--Select your trainer element--</option>
+                      <option value="STR">Fire</option>
+                      <option value="DEX">Earth</option>
+                      <option value="CHA">Air</option>
+                      <option value="INT">Water</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                 <div class="mb-3">
+                  <label for="txtTrainerLevel">Trainer level</label>
+                  <input type="text" class="form-control" id="txtTrainerLevel" placeholder="0">
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="mb-3">
+                   <label for="txtTrainerPower">Trainer power</label>
+                   <input type="text" class="form-control" id="txtTrainerPower" placeholder="0">
+                 </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                  Bunicorn
+                  <img id='imgBunicornElement' class="ml-2"> 
+              </h5>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label for="txtBunicornElement">
+                        Element
+                    </label>
+                    <select id='txtBunicornElement' class="form-select">
+                      <option value="">--Select your bunicorn element--</option>
+                      <option value="STR">Fire</option>
+                      <option value="DEX">Earth</option>
+                      <option value="CHAR">Air</option>
+                      <option value="INT">Water</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!--LB-->
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="txtAttribute1">Attribute 1</label>
+                    <select id='txtAttribute1' class="form-select">
+                      <option value="">--Select element--</option>
+                      <option value="STR">STR</option>
+                      <option value="DEX">DEX</option>
+                      <option value="CHAR">CHA</option>
+                      <option value="INT">INT</option>
+                      <option value="PWR">PWR</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="">Value</label>
+                    <input type="text" id='txtAttribute1Val' class="form-control" placeholder="0">
+                  </div>
+                </div>
+              </div>
+              <!--4B-->
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="txtTrainerLevel">Attribute 2</label>
+                    <select id='txtAttribute2' class="form-select">
+                      <option value="">--Select element--</option>
+                      <option value="STR">STR</option>
+                      <option value="DEX">DEX</option>
+                      <option value="CHAR">CHA</option>
+                      <option value="INT">INT</option>
+                      <option value="PWR">PWR</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="">Value</label>
+                    <input type="text" id='txtAttribute2Val' class="form-control" placeholder="0">
+                  </div>
+                </div>
+              </div>
+              <!--5B-->
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="txtTrainerLevel">Attribute 3</label>
+                    <select id='txtAttribute3' class="form-select">
+                      <option value="">--Select element--</option>
+                      <option value="STR">STR</option>
+                      <option value="DEX">DEX</option>
+                      <option value="CHAR">CHA</option>
+                      <option value="INT">INT</option>
+                      <option value="PWR">PWR</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="">Value</label>
+                    <input type="text" id='txtAttribute3Val' class="form-control" placeholder="0">
+                  </div>
+                </div>
+              </div>
+              <!--Bonus power-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label for="">Bonus power</label>
+                    <input type="text" id='txtBonusPower' class="form-control" placeholder="0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                  Enemy
+                  <img id='imgEnemyElement' class="ml-2"> 
+                </h5>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div class="mb-3">
+                    <label for="txtEnemyElement">Element</label>
+                    <select id='txtEnemyElement' class="form-select">
+                      <option value="">--Select enemy element--</option>
+                      <option value="STR">Fire</option>
+                      <option value="DEX">Earth</option>
+                      <option value="CHA">Air</option>
+                      <option value="INT">Water</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div class="mb-3">
+                    <label for="">Enemy power</label>
+                    <input type="text" id='txtEnemyPower' class="form-control" placeholder="0">
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="row">
+                  <h6 id='lbEnemyPwrRange' class="text-danger"></p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Result</h5>
+              <div class="row">
+                  <div class="col-md-3">
+                      <button type="button" id='btnCalc' class="btn btn-success">
+                        <i class="bi-calculator"></i>
+                        Calculate</button>
+                  </div>
+                  <div class="col-md-9 m-2">
+                      <h6 id='lbEnemyPwrRange'></h6>
+                      <h6 id='lbResult'></h6>
+                  </div>
+              </div>
+              <div class="row">
+                  <img src="assets/elements.png" height="50px">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+      <p>If you like my work, you can give me a cup of coffee (BUNI) to my wallet</p>
+      <p>0x54529107acD03401C7d9E12DEbf7fD30c5e75D62 <i class="btn bi-clipboard" style="font-weight: bold;" onclick="copyAddr('0x54529107acD03401C7d9E12DEbf7fD30c5e75D62')"></i></p>
+    </div>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+</body>
+</html>
